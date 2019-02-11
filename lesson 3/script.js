@@ -64,3 +64,11 @@ function switchPie(myNumber){
             return 'None';
     }
 }
+
+function callSwitch(){
+var aNumber = readNumber();
+var message = switchPie(aNumber);
+printMessage(message);
+}
+
+callSwitch();
