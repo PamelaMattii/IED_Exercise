@@ -10,16 +10,21 @@
 
         <script>
 
+
             function readNum(){
                 var enterNum = prompt ('Enter a number:');
                 enterNum = parseInt(enterNum);
                 return enterNum;
             }
 
+
+            var enterOp = prompt('Enter an operator:');
+            
+            
             function readOp(){
-                var enterOp = prompt ('Enter an operator:');
                 return enterOp;
             }
+
 
             function readSecondNum(){
                 var enterSecondNum = prompt ('Enter another number:');
@@ -31,17 +36,17 @@
             function calculator(){
                 switch(enterOp){
                     case '+':
-                     enterNum + enterSecondNum;
-                     break;
+                     return enterNum + enterSecondNum;
+                     
                     case '-':
-                     enterNum - enterSecondNum;
-                     break;
+                     return enterNum - enterSecondNum;
+                     
                     case '*':
-                     enterNum * enterSecondNum;
-                     break;
+                     return enterNum * enterSecondNum;
+                     
                     case '/':
-                     enterNum / enterSecondNum;
-                     break;
+                     return enterNum / enterSecondNum;
+                     
                     default:
                     return 'Invalid operator';
                 }
