@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator</title>
+    </head>
+     <body>
+
+
+        <script>
+
+            function readNum(){
+                var enterNum = prompt ('Enter a number:');
+                enterNum = parseInt(enterNum);
+                return enterNum;
+            }
+
+            function readOp(){
+                var enterOp = prompt ('Enter an operator:');
+                return enterOp;
+            }
+
+            function readSecondNum(){
+                var enterSecondNum = prompt ('Enter another number:');
+                enterSecondNum = parseInt(enterSecondNum);
+                return enterSecondNum;
+            }
+
+
+            function calculator(){
+                switch(enterOp){
+                    case '+':
+                     enterNum + enterSecondNum;
+                     break;
+                    case '-':
+                     enterNum - enterSecondNum;
+                     break;
+                    case '*':
+                     enterNum * enterSecondNum;
+                     break;
+                    case '/':
+                     enterNum / enterSecondNum;
+                     break;
+                    default:
+                    return 'Invalid operator';
+                }
+
+            }
+
+
+            readNum();
+            readOp();
+            readSecondNum();
+            calculator();
+
+
+
+        </script>
+     </body>    
+</html>
