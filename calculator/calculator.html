@@ -11,26 +11,33 @@
         <script>
 
 
+            readNum();
+           
+            readOp();
+
             function readNum(){
-                var enterNum = prompt ('Enter a number:');
+                enterNum = prompt ('Enter a number:');
                 enterNum = parseInt(enterNum);
-                return enterNum;
+                enterSecondNum = prompt ('Enter another number:');
+                enterSecondNum = parseInt(enterSecondNum);
+                
             }
 
 
-            var enterOp = prompt('Enter an operator:');
             
             
             function readOp(){
-                return enterOp;
+                enterOp = prompt('Enter an operator:');
+               
             }
 
+            /*enterSecondNum = readSecondNum();
 
             function readSecondNum(){
-                var enterSecondNum = prompt ('Enter another number:');
+                enterSecondNum = prompt ('Enter another number:');
                 enterSecondNum = parseInt(enterSecondNum);
-                return enterSecondNum;
-            }
+                
+            }*/
 
 
             function calculator(){
@@ -54,10 +61,7 @@
             }
 
 
-            readNum();
-            readOp();
-            readSecondNum();
-            calculator();
+           alert(calculator());
 
 
 
