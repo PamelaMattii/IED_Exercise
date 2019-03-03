@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+<script>
+    var foods = ['avocado', 'cilantro', 'onion', 'lime', 'tomato', 'salt', 'pepper'] 
+
+    function printNumberOfLetters(food){
+        var numOfLetters = food.length;
+        alert(food +' has ' + numOfLetters + ' letters');
+    }
+
+    for(index in foods ){
+        food = foods[index];
+        printNumberOfLetters(food);
+    }
+
+</script>
+</body>
+</html>
